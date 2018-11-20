@@ -22,22 +22,6 @@ body {
     
 }
 
-#my-pick {
-    margin: 0;
-    display: block;
-    padding: 0;
-    display:block;
-  }
-  
-  #my-pick li {
-    position: relative;
-    list-style: none;
-    margin: 0;
-    display: inline-block;
-    padding: 0 10px;
-    font-size:1.6em;
-  }
-
   #character {
       float: left;
       font-size: 40px;
@@ -70,7 +54,7 @@ body {
   #scores-w {
       position: absolute;
       float: left;
-      margin-top: 125px;
+      margin-top: 100px;
       margin-left: 200px;
       padding-bottom: 20px;
       height: 200px;
@@ -80,7 +64,7 @@ body {
     position: absolute;
     float: left;
     margin-top: 100px;
-    margin-left: 120px;
+    margin-left: 506px;
     padding-bottom: 20px;
     height: 200px;
     width: 200px;
@@ -88,5 +72,19 @@ body {
 
 #character-image {
     height: 300px;
-    width: 300px;
+    width: 250px;
+}
+
+#game-start-button {
+    float: left;
+    width: 250px;
+    height: 50px;
+    word-wrap: normal;
+}
+
+#new-pick-button {
+    float: right;
+    width: 250px;
+    height: 50px;
+    word-wrap: normal;
 }

@@ -6,6 +6,7 @@ window.onload = function() {
   // references to document
 
 var doc_gameRestartButton = document.getElementById("game-start-button");
+var doc_newPickButton = document.getElementById("new-pick-button");
 var doc_character = document.getElementById("character");
 var doc_guessedLetters = document.getElementById("guessedLetters");
 var doc_guessesLeft = document.getElementById("guessesLeft");
@@ -147,7 +148,7 @@ function checkForLoss() {
             doc_pic.src = "assets/images/Arya_Stark.jpg"
           }
           else if (personChosen === characters[1]){
-            doc_pic.src = "assets/images/Bran_Stark.jpg"
+            doc_pic.src = "assets/images/Bran_Stark.jpeg"
           }
           else if (personChosen === characters[2]){
             doc_pic.src = "assets/images/Catelyn_Stark.jpg"
@@ -183,7 +184,7 @@ function checkForLoss() {
             doc_pic.src = "assets/images/Robert_Baratheon.jpg"
           }
           else if (personChosen === characters[13]){
-            doc_pic.src = "assets/images/Sansa_Starkk.jpg"
+            doc_pic.src = "assets/images/Sansa_Stark.jpg"
           }
           else if (personChosen === characters[14]){
             doc_pic.src = "assets/images/Theon_Greyjoy.jpg"
@@ -198,10 +199,13 @@ function checkForLoss() {
     }
 }
 
+function restart() {
+  location.reload();
+}
+//event listeners for buttons
 
-//event listener for new game button
-
-doc_gameRestartButton.addEventListener("click", newGame);
+doc_gameRestartButton.addEventListener("click", restart);
+doc_newPickButton.addEventListener("click", newGame);
 
 
 
