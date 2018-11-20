@@ -54,10 +54,10 @@ function newGame() {
     wrongGuessesArray = [];
     personChosenArray = [];    
 
-    // new word
+    // new Character Choice
     personChosen = characters[Math.floor(Math.random() * characters.length)];
 
-    // create dashes
+    // create letter dashes
 
     for (var i = 0; i < personChosen.length; i++) {
         if (personChosen[i] === " ") {
@@ -108,7 +108,7 @@ function letterGuess(letter) {
     }
 }
 
-//checkIncorrect
+//check if you're Wrong
 
 function checkIfWrong(letter) {
     
@@ -125,7 +125,7 @@ function checkIfWrong(letter) {
         
 }
 
-//checkLose
+//check if you Lose
 
 function checkForLoss() {
     if (guessesLeft === 0) {
@@ -137,7 +137,7 @@ function checkForLoss() {
     checkForWin();
 }
 
-//checkWin
+//check if you Win
     function checkForWin() {
     if (personChosen.toLowerCase() === personChosenArray.join("").toLowerCase()) {
         wins++;
@@ -209,7 +209,7 @@ doc_gameRestartButton.addEventListener("click", newGame);
 
 document.onkeyup = function(event) {
     console.dir(event);
-    if (event.keyCode >= 65 && event.keyCode <= 90 || event.keyCode >= 48 && event.keyCode <= 57 || event.keyCode >= 96 && event.keyCode <= 105)  {
+    if (event.keyCode >= 65 && event.keyCode <= 90)  {
         letterGuess(event.key);
     }
 }
