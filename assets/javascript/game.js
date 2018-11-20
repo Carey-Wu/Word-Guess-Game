@@ -5,7 +5,7 @@ window.onload = function() {
 
   // references to document
 
-var doc_gameRestartButton = document.getElementById("game-start-button");
+var doc_gameRestartButton = document.getElementById("game-restart-button");
 var doc_newPickButton = document.getElementById("new-pick-button");
 var doc_character = document.getElementById("character");
 var doc_guessedLetters = document.getElementById("guessedLetters");
