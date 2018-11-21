@@ -7,6 +7,7 @@
     border-width: 2px;
     border-color: gray;
 }
+
 body {
     background: url("../images/Backgrounds/house-crests.jpg");
     height: 100%;
@@ -33,11 +34,7 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-h2{
-    color: rgb(235, 223, 223)
-}
-  
-h3{
+h1, h2, h3{
     color: rgb(235, 223, 223)
 }
 
@@ -52,6 +49,7 @@ h3{
 button, h1 {
     float: left;
 }
+
 #header, #wins, #losses {
     margin: 0 auto;
     width: 100%;
@@ -68,6 +66,7 @@ button, h1 {
     height: 200px;
     width: 200px;
 }
+
 #scores-l {
     position: absolute;
     float: left;
